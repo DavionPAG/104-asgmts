@@ -1,0 +1,46 @@
+body {
+  background-color: rgba(233, 241, 248, 0.7);
+  font-size: larger;
+}
+
+nav, h1, h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  padding: 2rem;
+}
+
+input , button{
+  width: 40%;
+  margin: auto;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 37%;
+  border: 4px inset greenyellow;
+}
+
+button {
+  border: 4px outset greenyellow;
+}
+
+button:hover {
+  border: 4px inset greenyellow;
+}
+
+input:hover {
+  border: outset
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
