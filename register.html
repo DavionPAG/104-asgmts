@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
   <title>The Houndry</title>
 </head>
 
 <body>
   <header>
+    <h1>The Houndry</h1>
     <nav>
       <a href="./index.html">Home</a>
       <a href="./services.html">Services</a>
       <a href="./register.html">register</a>
     </nav>
-    <h1>The Houndry</h1>
+    
   </header>
   <main>
     <h2>
@@ -24,20 +26,23 @@
     </h2>
 
     <div class="register">
-      <input type="text" placeholder="Enter Pet Name" id="pet">
-      <input type="number" placeholder="Age?" id="age">
-      <input type="text" placeholder="Gender?" id="gender">
-      <input type="text" placeholder="Breed?" id="breed">
-      <input type="text" placeholder="Type of Service" id="service">
-      <input type="text" placeholder="Your Name" id="owner">
-      <input type="tel" placeholder="Contact Number" id="phone">
+      <input class="form-control" type="text" placeholder="Pet Name" id="pet">
+      <input class="form-control" type="number" placeholder="Age" id="age">
+      <input class="form-control" type="text" placeholder="Gender" id="gender">
+      <input class="form-control" type="text" placeholder="Breed" id="breed">
+      <input class="form-control" type="text" placeholder="Service" id="service">
+      <input class="form-control" type="text" placeholder="Your Name" id="owner">
+      <input class="form-control" type="tel" placeholder=" Phone" id="phone">
       <button onclick="register();">Register</button>
     </div>
+
+    <div id="hounds"></div>
 
   </main>
   <footer>
     <p>&copy; DPG 2021</p>
   </footer>
+  <script src="scripts/display.js"></script>
   <script src="scripts/register.js"></script>
 </body>
 

@@ -1,10 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgba(233, 241, 248, 0.7);
   font-size: larger;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgb(218, 221, 212);
+border: 2px solid lightblue; 
 }
 
 nav, h1, h2 {
   text-align: center;
+  margin: 2rem;
+  text-shadow: rgb(209, 206, 206);
 }
 
 a {
@@ -13,16 +29,16 @@ a {
 }
 
 input , button{
-  width: 40%;
-  margin: auto;
-  margin-top: 1.5rem;
+  width: 50%;
+  margin: 1.2rem;
+  margin-top: 1.9rem;
   padding: 1.25rem;
-  border-radius: 37%;
-  border: 4px inset greenyellow;
+  border-radius: 27%;
+  border: 4px inset lightblue;
 }
 
 button {
-  border: 4px outset greenyellow;
+  border: 4px outset lightblue;
 }
 
 button:hover {
@@ -35,12 +51,31 @@ input:hover {
 
 .register {
   display: flex;
-  flex-direction: column;
   width: 90%;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
+  background-color: rgb(218, 221, 212);
+  border: 2px solid lightblue; 
+}
+
+
+
+#hounds {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hound {
+  border: 4px inset lightblue;
+  width: 27%;
+  padding: 1.5rem;
+  border-radius: 20%;
+  margin: 1.1rem;
+  background-color: rgb(218, 221, 212);
 }

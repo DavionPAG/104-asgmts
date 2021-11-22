@@ -46,9 +46,13 @@ function register() {
   console.log(inputPet.value, inputAge.value, inputGender.value, inputBreed.value, inputService.value, inputOwner.value, inputPhone.value);
   let newHound = new Hound(inputPet.value, inputAge.value, inputGender.value, inputBreed.value, inputService.value, inputOwner.value, inputPhone.value)
   den.hounds.push(newHound)
-  console.log(den.hounds)
+  displayCards(newHound)
   clear();
 }
+
+displayCards(balto)
+displayCards(liger)
+displayCards(lio)
 
 function clear() {
     inputPet.value = '';
