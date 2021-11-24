@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>The Houndry</title>
 </head>
@@ -16,23 +16,30 @@
     <nav>
       <a href="./index.html">Home</a>
       <a href="./services.html">Services</a>
-      <a href="./register.html">register</a>
+      <a href="./register.html">Register</a>
     </nav>
-    
+
   </header>
   <main>
+
+    <div class="search">
+      <input type="text" placeholder="Looking For Someone?" id="search">
+      <button onclick="findHound()">Search</button>
+    </div>
+
     <h2>
       Join The Pack
     </h2>
 
     <div class="register">
-      <input class="form-control" type="text" placeholder="Pet Name" id="pet">
-      <input class="form-control" type="number" placeholder="Age" id="age">
-      <input class="form-control" type="text" placeholder="Gender" id="gender">
-      <input class="form-control" type="text" placeholder="Breed" id="breed">
-      <input class="form-control" type="text" placeholder="Service" id="service">
-      <input class="form-control" type="text" placeholder="Your Name" id="owner">
-      <input class="form-control" type="tel" placeholder=" Phone" id="phone">
+      <input type="text" placeholder="Pet Name" id="pet">
+      <input type="number" placeholder="Age" id="age">
+      <input type="text" placeholder="Gender" id="gender">
+      <input type="text" placeholder="Breed" id="breed">
+      <input type="text" placeholder="Height" id="height">
+      <input type="text" placeholder="Service" id="service">
+      <input type="text" placeholder="Your Name" id="owner">
+      <input type="tel" placeholder=" Phone" id="phone">
       <button onclick="register();">Register</button>
     </div>
 

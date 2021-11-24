@@ -1,12 +1,15 @@
 html {
   box-sizing: border-box;
+  max-width: 100vw;
+  font-family: 'Nova Mono', monospace;
 }
 
 body {
   background-color: rgba(233, 241, 248, 0.7);
   font-size: larger;
-  width: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -25,11 +28,12 @@ nav, h1, h2 {
 
 a {
   text-decoration: none;
-  padding: 2rem;
+  padding: 1.7rem;
+  font-size: larger;
+  font-weight: bold;
 }
 
 input , button{
-  width: 50%;
   margin: 1.2rem;
   margin-top: 1.9rem;
   padding: 1.25rem;
@@ -51,6 +55,7 @@ input:hover {
 
 .register {
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   margin: auto;
   margin-bottom: 2rem;
@@ -61,6 +66,9 @@ footer {
   padding: 2rem;
   background-color: rgb(218, 221, 212);
   border: 2px solid lightblue; 
+  margin-top: auto;
+  margin-bottom: 1.2rem;
+  font-weight: bolder;
 }
 
 
@@ -73,9 +81,31 @@ footer {
 
 .hound {
   border: 4px inset lightblue;
-  width: 27%;
+  width: 25%;
   padding: 1.5rem;
   border-radius: 20%;
   margin: 1.1rem;
   background-color: rgb(218, 221, 212);
+}
+
+.search {
+  text-align: center  ;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services img {
+  width: 25vh;
+  margin: 1.2rem;
+  margin-top: 20vh;
+  border-radius: 50%;
+}
+
+.info {
+  width: 75%;
+  margin: auto;
+  padding-top: 2rem;
 }
